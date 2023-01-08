@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+</head>
+<body>
+    {% for emp in employees %}
+        <h1>{{emp.Empname}}</h1>
+        <p>{{emp.EmpDept}}</p>
+        <button><a href="{{url_for('delete_emp',id=emp.idemployee)}}">Delete emp</a></button>
+    {% endfor %}
+    <button><a href="{{url_for('add_emp')}}">Add employee</a></button>
+</body>
+</html>

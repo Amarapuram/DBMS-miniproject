@@ -1,6 +1,6 @@
 from flask_mysqldb import MySQL
 from flask import Flask, request,render_template,redirect,url_for
-
+#i ank
 
 app = Flask(__name__)
 
